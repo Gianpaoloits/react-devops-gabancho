@@ -19,7 +19,7 @@ jobs:
       
       - name: Build app
         run: npm run build
-test:
+  test:
     needs: build
     runs-on: ubuntu-latest
     steps:
