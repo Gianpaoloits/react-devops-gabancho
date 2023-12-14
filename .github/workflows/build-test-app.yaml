@@ -36,7 +36,7 @@ jobs:
       - name: Test app
         run: npm run test
   serve:
-    needs: build
+    needs: serve
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -49,5 +49,5 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Serve app
+      - name: Test app
         run: npm run dev
